@@ -1,0 +1,167 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilos del encabezado */
+header {
+    background: #FFF4B7;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+nav .logo {
+    display: flex;
+    align-items: center; /* Alinea la imagen y el texto verticalmente */
+}
+
+nav .logo img {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+nav .logo h1 {
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.nav-links li a:hover {
+    color: #000;
+}
+/* Estilos del fondo de la página */
+.contenido {
+    background-image: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/116000/116863-Plaza-De-La-Cultura-Santa-Domingo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/116000/116863-Plaza-De-La-Cultura-Santa-Domingo.jpg');
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px; /* Para evitar que el contenido se esconda bajo el header */
+    color: #ffffff;
+}
+
+.contenido-texto h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contenido-texto p {
+    font-size: 1.25rem;
+}
+
+/* Estilos de la galería */
+.galeria {
+    margin: 30px 0;
+    padding: 30px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2.8rem;
+
+    text-align: center;
+    border-color: #f7f7f7;
+    background-color: #ffffff;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.galeria-grid .foto img {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid .foto img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #FFF4B7;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+  h1 {
+    font-size: 2em;
+  }
+/* Estilos de la imagen del logo */
+.logo-img {
+    border-radius: 50%;
+    border: 2px solid #000;
+    padding: 5px;
+}
+/* Ajustes de responsividad */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .descripcion {
+        font-size: 1.1rem;
+    }
+}
